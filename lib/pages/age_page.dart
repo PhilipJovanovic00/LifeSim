@@ -47,6 +47,7 @@ class _AgePageState extends State<AgePage> {
     });
     if (age >= 80) {
       _resetAge();
+      gameStatus.resetAll();
     }
   }
 
