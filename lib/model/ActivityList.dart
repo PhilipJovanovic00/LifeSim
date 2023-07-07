@@ -72,7 +72,6 @@ class GameStatus extends ChangeNotifier {
 
   Future<void> updateHealth(int value) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    // int updatedHealth = _health + value;
     _health += value;
     await prefs.setInt('health', _health);
     notifyListeners();

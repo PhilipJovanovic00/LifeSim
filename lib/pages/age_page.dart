@@ -45,6 +45,9 @@ class _AgePageState extends State<AgePage> {
       gameStatus.updateHappiness(-10);
       gameStatus.updateHealth(-10);
     });
+    if (age >= 80) {
+      _resetAge();
+    }
   }
 
   void _configureShakeDetection() {
@@ -136,7 +139,6 @@ class _AgePageState extends State<AgePage> {
             ),
           ),
           Column(
-            //crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
                 padding: const EdgeInsets.all(4),
