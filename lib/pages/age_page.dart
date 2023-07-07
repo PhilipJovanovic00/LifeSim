@@ -66,6 +66,7 @@ class _AgePageState extends State<AgePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('LifeSim'),
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
