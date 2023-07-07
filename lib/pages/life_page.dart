@@ -39,7 +39,7 @@ class LifePageState extends State<LifePage> {
                     if (activity.getActivityList()[index].action == "travel") {
                       gameStatus.updateHappiness(10);
                     }
-                    Navigator.push(
+                    Navigator.pop(
                       context,
                       MaterialPageRoute(builder: (context) => AgePage()),
                     );
